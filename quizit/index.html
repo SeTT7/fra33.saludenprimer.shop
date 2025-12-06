@@ -1,176 +1,154 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz Vitalità e Idratazione</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 500px;
-      margin: auto;
-    }
-    .quiz-step {
-      display: none;
-      flex-direction: column;
-    }
-    .quiz-step.active {
-      display: flex;
-    }
-    h2 {
-      color: #ff3c3c;
-    }
-    button.option {
-      background-color: #111;
-      border: 2px solid #ff3c3c;
-      color: white;
-      padding: 15px;
-      margin: 10px 0;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      border-radius: 8px;
-    }
-    button.option:hover,
-    button.option.selected {
-      background-color: #ff3c3c;
-      color: #000;
-    }
-    #result {
-      display: none;
-      background-color: #111;
-      border: 2px solid #ff3c3c;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 30px;
-    }
-    #checkout-btn {
-      background-color: #ff3c3c;
-      color: white;
-      padding: 15px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
-    }
-    #checkout-btn:hover {
-      background-color: #ff1a1a;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 12px;
-      color: #aaa;
-      text-align: center;
-    }
-    footer a {
-      color: #ff3c3c;
-      text-decoration: none;
-    }
-  </style>
+    <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+<link rel="preload" href="https://scripts.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/players/67d20d15b7ef8e55f55e284e/v4/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/67d0ec6327e969e4dd7cee46/main.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Clicável com Botão</title>
+    <style>
+        /* Fundo preto na página */
+        body {
+            background-color: #000; /* Fundo preto */
+            color: #fff; /* Texto branco para contraste */
+            margin: 0; /* Remove margens padrão do navegador */
+            padding: 0; /* Remove espaçamento padrão */
+            font-family: Arial, sans-serif; /* Fonte legível */
+        }
+
+        /* Container centralizado e responsivo */
+        .midas-cta-container {
+            max-width: 100%; /* Largura máxima do container */
+            margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+            text-align: center; /* Centraliza o texto e elementos */
+            padding: 20px; /* Espaçamento interno */
+        }
+
+        /* Imagem clicável */
+        #midas-cta {
+            width: 100%; /* A imagem sempre ocupará 100% da largura disponível */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 10px; /* Bordas arredondadas (opcional) */
+            cursor: pointer; /* Mostra que é clicável */
+        }
+
+        /* Botão estilizado - Agora em verde */
+        #midas-cta-button {
+            display: inline-block;
+            margin-top: 15px; /* Espaço entre a imagem e o botão */
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745; /* Cor verde */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Remove o sublinhado caso seja um link */
+            font-weight: bold;
+        }
+
+        /* Flecha no botão */
+        #midas-cta-button::after {
+            content: " ➡️"; /* Adiciona a flecha após o texto */
+            margin-left: 5px;
+        }
+
+        /* Botão responsivo ao passar o mouse */
+        #midas-cta-button:hover {
+            background-color: #218838; /* Cor verde mais escura ao passar o mouse */
+        }
+    </style>
+    
+    
+    
+    
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
+
+    
 </head>
 <body>
+    <div class="midas-cta-container">
+<vturb-smartplayer id="vid-693214c32c6468ef650592c2" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/players/693214c32c6468ef650592c2/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
 
-  <h2>Controllo Rapido della Vitalità:</h2>
+  
+   <style>
+@keyframes pulse {
+0% {
+transform: scale(1);
+}
+100% {
+transform: scale(1.2);
+}
+}
+.smartplayer-call-action--link {
+animation: pulse 1s infinite forwards alternate-reverse;
+}
+</style>
 
-  <div class="quiz-step active" id="step1">
-    <p>Quanti anni hai?</p>
-    <button class="option" onclick="nextStep()">Meno di 30 anni</button>
-    <button class="option" onclick="nextStep()">Da 30 a 50 anni</button>
-    <button class="option" onclick="nextStep()">Più di 50 anni</button>
-  </div>
+    
+    </div>
 
-  <div class="quiz-step" id="step2">
-    <p>Di solito rimani ben idratato durante il giorno?</p>
-    <button class="option" onclick="nextStep()">Sì</button>
-    <button class="option" onclick="nextStep()">Non proprio</button>
-  </div>
+ <footer class="text-center bg-dark">
+    <div class="container text-white py-4 py-lg-5">
+        
+            <div style="width: 100%; padding: 5px; box-sizing: border-box;">
+       <div class="shadow-box h-100 text-center text-md-end mr-60">
+    <img class="img-fluid mb-lg-0" src="img/DISCLAYMER.webp" loading="lazy" style="max-width: 100%; height: auto; max-height: 300px;">
+        </div>
+    </div>
 
-  <div class="quiz-step" id="step3">
-    <p>Come descriveresti i tuoi livelli di energia attuali?</p>
-    <button class="option" onclick="nextStep()">Bassi</button>
-    <button class="option" onclick="nextStep()">Nella media</button>
-    <button class="option" onclick="nextStep()">Alti</button>
-  </div>
+        <div style="width: 100%; padding: 10px; box-sizing: border-box;">
+        
 
-  <div class="quiz-step" id="step4">
-    <p>Ti senti spesso stanco o mentalmente annebbiato?</p>
-    <button class="option" onclick="nextStep()">Sì</button>
-    <button class="option" onclick="nextStep()">A volte</button>
-    <button class="option" onclick="nextStep()">No</button>
-  </div>
 
-  <div class="quiz-step" id="step5">
-    <p>Quanto è equilibrata la tua alimentazione quotidiana?</p>
-    <button class="option" onclick="nextStep()">Salto spesso i pasti</button>
-    <button class="option" onclick="nextStep()">Abbastanza equilibrata</button>
-    <button class="option" onclick="nextStep()">Molto equilibrata</button>
-  </div>
+    </div>
+      
+    </div>
 
-  <div class="quiz-step" id="step6">
-    <p>Ti piacerebbe conoscere un protocollo naturale che supporta idratazione, energia e vitalità generale?</p>
-    <button class="option" onclick="showResult()">Sì</button>
-    <button class="option" onclick="showResult()">Forse</button>
-  </div>
+    
+  </footer>
+  
+  
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          function getAllParams(url) {
+              const urlObj = new URL(url);
+              let paramString = "";
 
-  <div id="result">
-    <h2>La Tua Raccomandazione Personalizzata</h2>
-    <p>🌿 In base alle tue risposte, potresti trarre beneficio dal conoscere il <strong>Celtic Mineral Hydration Protocol</strong> — una guida educativa naturale che aiuta a supportare vitalità, energia ed equilibrio attraverso un corretto apporto di minerali e buone abitudini di idratazione.</p>
-    <p>💧 Questa guida è <strong>puramente informativa</strong> e si concentra su spunti di stile di vita e nutrizione che molte persone trovano utili per il benessere generale.</p>
-    <p>✨ Scopri come rimanere naturalmente energico e idratato ogni giorno.</p>
-    <button id="checkout-btn" onclick="goToCheckout()">Accedi alla Guida</button>
-  </div>
+              // Iterando sobre todos os parâmetros da URL
+              for (const [key, value] of urlObj.searchParams) {
+                  paramString += `${paramString ? '&' : ''}${key}=${value}`;
+              }
 
-  <footer>
-  <div class="disclaimer">
-    <strong>Disclaimer:</strong> Questo sito web e i suoi contenuti sono forniti da Infosetads esclusivamente a scopo informativo ed educativo.  
-    Mundpay, Meta (Facebook), Google e altre terze parti <strong>non sono responsabili</strong> per eventuali risultati, interpretazioni o azioni basate sui contenuti qui presentati.  
-    Nulla in questa pagina costituisce consulenza medica, finanziaria o professionale.
-  </div>
-  <p>
-    <a href="https://mund.mennitric.online/terms">Termini di Utilizzo</a> |
-    <a href="https://mund.mennitric.online/privacy">Informativa sulla Privacy</a> |
-    <a href="https://mund.mennitric.online/refund">Politica di Rimborso</a> |
-    <a href="https://mund.mennitric.online/support">Supporto</a>
-  </p>
-  <p>
-    <strong>Infosetads</strong> — CNPJ: 58.441.998/0001-40<br>
-    Salvador, Bahia, Brasile<br>
-    Supporto: <a href="mailto:infosetads1@gmail.com">infosetads1@gmail.com</a>
-  </p>
-</footer>
+              return paramString;
+          }
 
-  <script>
-    let currentStep = 1;
-    function nextStep() {
-      document.getElementById("step" + currentStep).classList.remove("active");
-      currentStep++;
-      const next = document.getElementById("step" + currentStep);
-      if (next) {
-        next.classList.add("active");
-      }
-    }
+          const params = getAllParams(window.location.href);
 
-    function showResult() {
-      document.getElementById("step" + currentStep).classList.remove("active");
-      document.getElementById("result").style.display = "block";
-    }
+          if (params) {
+              const links = document.querySelectorAll("a");
 
-    function goToCheckout() {
-      window.location.href = "";
-    }
-
-    const options = document.querySelectorAll("button.option");
-    options.forEach(btn => {
-      btn.addEventListener("click", () => {
-        const siblings = btn.parentNode.querySelectorAll("button.option");
-        siblings.forEach(sib => sib.classList.remove("selected"));
-        btn.classList.add("selected");
+              links.forEach(link => {
+                  const separator = link.href.includes("?") ? "&" : "?";
+                  link.href += `${separator}${params}`;
+              });
+          }
       });
-    });
-  </script>
+    </script>
+
+
 </body>
 </html>
